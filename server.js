@@ -84,13 +84,6 @@ app.post('/submit-form', async (req, res) => {
 });
 
 
-// app.get('/healthy', (req, res) => {
-    
-//     res.status(200).json({ message: 'Form submission successful!'});
-
-    
-// });
-
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
