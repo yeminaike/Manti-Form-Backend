@@ -50,7 +50,7 @@ app.post('/submit-form', async (req, res) => {
       message: 'Please provide all Fields',
     });
   }
-  
+
 
   if (!allowedSubjects.includes(subject)) {
   return res.status(400).json({
@@ -84,12 +84,12 @@ app.post('/submit-form', async (req, res) => {
 });
 
 
-app.get('/healthy', (req, res) => {
+// app.get('/healthy', (req, res) => {
     
-    res.status(200).json({ message: 'Form submission successful!'});
+//     res.status(200).json({ message: 'Form submission successful!'});
 
     
-});
+// });
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
